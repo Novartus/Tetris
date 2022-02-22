@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tetris
 {
-    internal class GameGrid
+    public  class GameGrid
     {
         private readonly int[,] grid;
         public int Rows { get; set; }
@@ -18,7 +18,7 @@ namespace Tetris
             set { grid[row, column] = value; }
         }
 
-        public GameGrid(int rows, int columns)
+        public GameGrid(int rows = 22, int columns = 10)
         {
             Rows = rows;
             Columns = columns;
