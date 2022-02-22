@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Background.jpg" />
     <None Remove="Assets\Block_Design_Empty.png" />
     <None Remove="Assets\Block_Design_I.png" />
     <None Remove="Assets\Block_Design_J.png" />
@@ -28,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Background.jpg" />
     <Resource Include="Assets\Block_Design_Empty.png" />
     <Resource Include="Assets\Block_Design_I.png" />
     <Resource Include="Assets\Block_Design_J.png" />

@@ -5,8 +5,90 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tetris"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800"
+        MinWidth="600" MinHeight="600"
+        Foreground="Wheat"
+        FontFamily="Arial"
+        FontSize="16"
+        KeyDown="Window_Key_Down">
+
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/Background.jpg"/>
+        </Grid.Background>
+
+        <Viewbox Grid.Row="1"
+                 Grid.Column="1"
+                 Margin="0,0,0,20">
+            <Canvas x:Name="GameCanvas"
+                    Background="#101010"
+                    Width="250"
+                    Height="510"
+                    ClipToBounds="True"
+                    Loaded="Game_Canvas_Loaded"/>
+        </Viewbox>
+
+        <TextBlock x:Name="ScoreText"
+                   Grid.Row="1"
+                   Text="Score: "
+                   Margin="64,336,65,74"
+                   TextAlignment="Center" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+        <StackPanel Grid.Row="1"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center" Height="183" Margin="0,29,0,0" Width="204" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}">
+            <TextBlock Text="Hold"
+                       TextAlignment="Center"/>
+            <Image x:Name="HoldImage"
+                   Margin="20"
+                   Width="125"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1"
+                    Grid.Column="2"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center" Height="238" Width="161" Margin="0,29,0,0" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}">
+            <TextBlock Text="Next"
+                       TextAlignment="Center"/>
+            <Image x:Name="NextImage"
+                   Margin="20"
+                   Width="125"/>
+        </StackPanel>
+
+        <Grid x:Name="GameOverMenu"
+              Background="#CC000040"
+              Grid.RowSpan="2"
+              Grid.ColumnSpan="3"
+              Visibility="Hidden">
+
+            <StackPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <TextBlock Text="Game Over!"
+                           FontSize="30"
+                           TextAlignment="Center"/>
+                <TextBlock x:Name="FinalScoreText"
+                           Text="Your Score: "
+                           FontSize="28"
+                           TextAlignment="Center"/>
+                <Button Content="Play Again!"
+                        Background="Blue"
+                        Margin="0,21,0,0"
+                        Padding="4"
+                        Click="Play_Again_Click"/>
+            </StackPanel>
+
+        </Grid>
 
     </Grid>
+
 </Window>
