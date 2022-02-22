@@ -7,4 +7,44 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Assets\Block_Design_Empty.png" />
+    <None Remove="Assets\Block_Design_I.png" />
+    <None Remove="Assets\Block_Design_J.png" />
+    <None Remove="Assets\Block_Design_L.png" />
+    <None Remove="Assets\Block_Design_O.png" />
+    <None Remove="Assets\Block_Design_S.png" />
+    <None Remove="Assets\Block_Design_T.png" />
+    <None Remove="Assets\Block_Design_Z.png" />
+    <None Remove="Assets\Blue.png" />
+    <None Remove="Assets\Cyan.png" />
+    <None Remove="Assets\Empty_Space.png" />
+    <None Remove="Assets\Green.png" />
+    <None Remove="Assets\Icon.ico" />
+    <None Remove="Assets\Orange.png" />
+    <None Remove="Assets\Purple.png" />
+    <None Remove="Assets\Red.png" />
+    <None Remove="Assets\Yellow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Block_Design_Empty.png" />
+    <Resource Include="Assets\Block_Design_I.png" />
+    <Resource Include="Assets\Block_Design_J.png" />
+    <Resource Include="Assets\Block_Design_L.png" />
+    <Resource Include="Assets\Block_Design_O.png" />
+    <Resource Include="Assets\Block_Design_S.png" />
+    <Resource Include="Assets\Block_Design_T.png" />
+    <Resource Include="Assets\Block_Design_Z.png" />
+    <Resource Include="Assets\Blue.png" />
+    <Resource Include="Assets\Cyan.png" />
+    <Resource Include="Assets\Empty_Space.png" />
+    <Resource Include="Assets\Green.png" />
+    <Resource Include="Assets\Icon.ico" />
+    <Resource Include="Assets\Orange.png" />
+    <Resource Include="Assets\Purple.png" />
+    <Resource Include="Assets\Red.png" />
+    <Resource Include="Assets\Yellow.png" />
+  </ItemGroup>
+
 </Project>

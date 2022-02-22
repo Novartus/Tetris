@@ -46,7 +46,6 @@ namespace Tetris
                     return false;
                 }
             }
-
             return true;
         }
 
@@ -124,7 +123,6 @@ namespace Tetris
         public void HoldBlock()
         {
             if (!BlockCanHold) { return; }
-
             if (BlockOnHold == null)
             {
                 BlockOnHold = CurrentSelectedBlock;
@@ -146,7 +144,6 @@ namespace Tetris
             {
                 dropDistance++;
             }
-
             return dropDistance;
         }
 
@@ -157,7 +154,6 @@ namespace Tetris
             {
                 dropDistance = System.Math.Min(dropDistance, TileDropDistance(position));
             }
-
             return dropDistance;
         }
 
