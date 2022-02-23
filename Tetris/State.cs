@@ -101,7 +101,7 @@ namespace Tetris
 
             ScoreLine = ScoreLine + GameGrid.ClearFullRow();
 
-            Score = 20 + (3 * ScoreLine);
+            Score = Score +  20 + (3 * ScoreLine);
             if (CheckGameOver())
             {
                 GameOver = true;
