@@ -44,6 +44,11 @@
                    Text="Score: "
                    Margin="64,336,65,74"
                    TextAlignment="Center" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+        <TextBlock x:Name="ScoreLineText"
+                   Grid.Row="1"
+                   Text="Lines: "
+                   Margin="64,456,66,74"
+                   TextAlignment="Center" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
         <StackPanel Grid.Row="1"
                     VerticalAlignment="Top"
                     HorizontalAlignment="Center" Height="183" Margin="0,29,0,0" Width="204" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}">
@@ -57,7 +62,7 @@
         <StackPanel Grid.Row="1"
                     Grid.Column="2"
                     VerticalAlignment="Top"
-                    HorizontalAlignment="Center" Height="238" Width="161" Margin="0,29,0,0" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}">
+                    HorizontalAlignment="Center" Height="214" Width="203" Margin="0,29,0,0" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}">
             <TextBlock Text="Next"
                        TextAlignment="Center"/>
             <Image x:Name="NextImage"

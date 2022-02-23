@@ -24,6 +24,7 @@ namespace Tetris
 
         public bool GameOver { get; private set; }
         public int Score { get; private set; }
+        public int ScoreLine { get; private set; }
         public Block BlockOnHold { get; private set; }
         public bool BlockCanHold { get; private set; }
 
@@ -97,8 +98,10 @@ namespace Tetris
             {
                 GameGrid[position.Row, position.Column] = CurrentSelectedBlock.ID;
             }
-            
-            Score = Score + GameGrid.ClearFullRow();
+
+            ScoreLine = ScoreLine + GameGrid.ClearFullRow();
+
+            Score = 20 + (3 * ScoreLine);
             if (CheckGameOver())
             {
                 GameOver = true;
